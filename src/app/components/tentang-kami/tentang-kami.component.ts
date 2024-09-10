@@ -5,8 +5,6 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './tentang-kami.component.html',
-  styleUrl: './tentang-kami.component.css'
+  styleUrl: './tentang-kami.component.css',
 })
-export class TentangKamiComponent {
-
-}
+export class TentangKamiComponent {}

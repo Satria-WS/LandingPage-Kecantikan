@@ -1,1 +1,26 @@
-<p>header works!</p>
+<header class="bg-[#524A4E] py-6 px-16">
+  <nav class="flex justify-between">
+    <div>
+      <img [src]="logo" alt="header__logo" />
+    </div>
+
+    <ul class="flex flex-row text-[#FDEFF4] text-base font-medium">
+      <li class="hover:font-bold">
+        <a routerLink="/">Beranda</a>
+      </li>
+      <li class="hover:font-bold">
+        <a routerLink="/tentang-kami">Tentang Kami</a>
+      </li>
+      <li class="hover:font-bold">
+        <a routerLink="/produk">Produk</a>
+      </li>
+      <li class="hover:font-bold">
+        <a routerLink="/peluang-bisnis">Peluang Bisnis</a>
+      </li>
+      <li class="bg-[#FDEFF4] rounded-md flex px-4">
+        <img class="max-w-7" src="/assets/login/login.svg" alt="login__logo" />
+        <span class="text-[#524A4E] content-center px-1">Login</span>
+      </li>
+    </ul>
+  </nav>
+</header>

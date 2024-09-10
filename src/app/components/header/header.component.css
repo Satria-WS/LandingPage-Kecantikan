@@ -1,0 +1,22 @@
+/* To apply styles to only the first four list items (<li>)  */
+/* :nth-child(-n+4): This targets the first four children (1st, 2nd, 3rd, and 4th) of the <ul> */
+ul li:nth-child(-n + 4) {
+  /* background-color: aqua; */
+  align-content: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+ul li {
+  text-decoration: none;
+  color: inherit;
+  transition:
+    text-underline-offset 0.3s,
+    color 0.3s; /* Add smooth transition */
+}
+
+ul li:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.4rem; /* Add 1rem space between text and underline */
+  text-decoration-thickness: 2px;
+}

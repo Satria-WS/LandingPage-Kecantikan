@@ -1,0 +1,16 @@
+.containerx {
+  position: relative;
+  width: 100%;
+  height: 633px;
+  border: 1px solid pink;
+}
+
+.containerx img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+div {
+  border: 1px solid salmon;
+}

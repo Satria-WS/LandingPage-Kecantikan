@@ -20,5 +20,11 @@ div {
   padding-right: 10%; */
   display:grid;
   grid-template-columns: 1fr 1fr;
+  column-gap: 1%;
+  row-gap: 2%;
 
+}
+
+section .grid-item {
+  height: 400px;
 }

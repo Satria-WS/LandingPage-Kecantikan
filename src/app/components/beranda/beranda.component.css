@@ -21,8 +21,11 @@ div {
   display:grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 1%;
-  row-gap: 2%;
 
+}
+
+.grid-container div {
+  padding-top: 1.7rem;
 }
 
 section .grid-item {

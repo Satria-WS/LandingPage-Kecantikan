@@ -4,6 +4,7 @@ import { TentangKamiComponent } from './components/tentang-kami/tentang-kami.com
 import { ProdukComponent } from './components/produk/produk.component';
 import { PeluangBisnisComponent } from './components/peluang-bisnis/peluang-bisnis.component';
 import { BerandaComponent } from './components/beranda/beranda.component';
+import { LoginComponent } from './components/login/login.component';
 
 export const routes: Routes = [
   {
@@ -33,4 +34,8 @@ export const routes: Routes = [
       },
     ],
   },
+  {
+    path: 'login',
+    component: LoginComponent
+  }
 ];

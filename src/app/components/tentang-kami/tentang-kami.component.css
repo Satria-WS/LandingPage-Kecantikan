@@ -1,0 +1,25 @@
+div {
+  border: 1px solid salmon;
+}
+
+h2 {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 10px;
+
+}
+
+.misi-content div img {
+height: 202px;
+ margin:auto;
+}
+
+.misi-content div p {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #2F2E41;
+  text-align: center;
+  padding: 20px;
+}

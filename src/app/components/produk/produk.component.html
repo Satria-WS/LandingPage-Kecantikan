@@ -1,1 +1,63 @@
-<p>produk works!</p>
+<main>
+  <section class="title">
+    <div class="flex flex-col items-center">
+      <h2 class="text-4xl text-[#524A4E] font-bold pt-10">PRODUK KAMI</h2>
+      <p
+        class="text-center text-lg text-[#524A4E] font-medium max-w-[762px] py-7"
+      >
+        Dengan hasil riset yang dikembangkan sampai saat ini terciptalah produk
+        dengan standar kualitas tinggi dan diuji dengan basis ilmu pengetahuan.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <article>
+      <div class="picture grid grid-cols-3 gap-1 py-10 px-20">
+        @for (item of image; track item) {
+          <div class="flex flex-col items-center">
+            <div class="py-10">
+              <img class="w-full min-w-20" [src]="item.src" alt="image-1" />
+            </div>
+            <button class="bg-[#FF5C8D] rounded-full w-[163px] h-[49px]">
+              <span class="text-white text-xs font-semibold">
+                SELENGKAPNYA
+              </span>
+            </button>
+          </div>
+        }
+
+        <!-- <div>
+          <div>
+            <img src="/assets/produk/image-2.png" alt="image-2"/>
+          </div>
+          <button>SELENGKAPNYA</button>
+        </div>
+        <div>
+          <div>
+            <img src="/assets/produk/image-3.png" alt="image-3"/>
+          </div>
+          <button>SELENGKAPNYA</button>
+        </div>
+        <div>
+          <div>
+            <img src="/assets/produk/image-4.png" alt="image-4"/>
+          </div>
+          <button>SELENGKAPNYA</button>
+        </div>
+        <div>
+          <div>
+            <img src="/assets/produk/image-5.png" alt="image-5"/>
+          </div>
+          <button>SELENGKAPNYA</button>
+        </div>
+        <div>
+          <div>
+            <img src="/assets/produk/image-6.png" alt="image-6"/>
+          </div>
+          <button>SELENGKAPNYA</button>
+        </div> -->
+      </div>
+    </article>
+  </section>
+</main>

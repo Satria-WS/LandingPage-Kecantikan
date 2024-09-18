@@ -1,0 +1,21 @@
+h2 {
+  position: relative;
+  text-align: center;
+}
+h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  width: 150px;
+  height: 4px;
+  transform: skew(-12deg) translateX(-50%);
+  background: #524A4E;
+  z-index: -1;
+}
+
+.picture div {
+  /* padding: 50px; */
+  /* background-color: gray; */
+  text-align: center;
+}

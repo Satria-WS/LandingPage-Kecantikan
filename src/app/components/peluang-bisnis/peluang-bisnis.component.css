@@ -1,0 +1,41 @@
+h2 {
+  position: relative;
+  text-align: center;
+}
+h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 1px;
+  width: 150px;
+  height: 4px;
+  transform: skew(-12deg) translateX(-50%);
+  background: #524A4E;
+  z-index: -1;
+}
+
+/* h2 {
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 10px;
+
+} */
+
+.misi-content div img {
+height: 202px;
+ margin:auto;
+}
+
+.misi-content div p {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #2F2E41;
+  text-align: center;
+  padding: 20px;
+}
+
+div {
+  /* border: 1px solid red; */
+}

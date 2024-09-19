@@ -14,3 +14,22 @@ section {
   background: linear-gradient(180deg, #E54C91 0%, #F48B7B 49.6%, #F7AD50 100%);
   box-shadow: 0px 9.923px 39.692px 9.923px rgba(0, 0, 0, 0.25);
 }
+
+.login-password {
+  /* border-radius: 10px; */
+  background: radial-gradient(68.44% 67.52% at 55.15% 32.68%, rgba(229, 76, 145, 0.39) 0%, rgba(244, 139, 123, 0.24) 100%);
+  margin-left: -3rem;
+
+}
+
+.text-school {
+  background: linear-gradient(94deg, #F7AD50 57.37%, #EB4335 90.7%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+/* font-size: 48px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 1.68px; */
+}

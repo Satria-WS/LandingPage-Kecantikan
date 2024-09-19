@@ -1,0 +1,16 @@
+main {
+  background: linear-gradient(110deg, #F3CE9E -1.73%, rgba(244, 139, 123, 0.72) 49.09%, rgba(229, 76, 145, 0.78) 91.15%);
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+}
+
+section {
+  border: 1px solid red;
+}
+
+.pelangi {
+  border-radius: 49.615px;
+  background: linear-gradient(180deg, #E54C91 0%, #F48B7B 49.6%, #F7AD50 100%);
+  box-shadow: 0px 9.923px 39.692px 9.923px rgba(0, 0, 0, 0.25);
+}

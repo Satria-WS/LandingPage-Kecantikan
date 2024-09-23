@@ -28,9 +28,19 @@ background-clip: text;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 letter-spacing: 1.68px;
-/* font-size: 48px;
-font-style: normal;
+font-size: 48px;
+
+/* font-style: normal;
 font-weight: 600;
-line-height: normal;
+line-height: normal; */
 
 }
+
+
+/* .facebook {
+  color: #FFF;
+font-size: 25px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+} */

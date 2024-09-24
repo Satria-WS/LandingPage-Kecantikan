@@ -44,12 +44,24 @@
           <span>OR</span>
         </div>
         <div class="py-3">
-          <form class="pl-20">
-            <div>
-              <label>Email</label>
+          <form class="pl-20 pr-4">
+            <div class="input-container py-5">
+              <label class="text-xl tracking-[10px]">Email</label>
               <input type="email" />
+              <img src="/assets/login/email.svg" alt="email"/>
             </div>
+            <div class="input-container py-3">
+              <label class="text-xl tracking-[10px]">Password</label>
+              <input type="password"/>
+              <img src="/assets/login/password.svg" alt="password"/>
+            </div>
+            <p class="py-3">Don’t have account sign up, <span>here</span></p>
           </form>
+          <div class="relative bg-black">
+            <button class="absolute right-14">
+              <span class="text-white">Login</span>
+            </button>
+          </div>
         </div>
 
       </div>

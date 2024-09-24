@@ -44,3 +44,40 @@ font-style: normal;
 font-weight: 700;
 line-height: normal;
 } */
+
+input[type="email"],
+input[type="password"] {
+  background: transparent;
+  color: #fff;
+  width: 90%;
+  font-size: 16px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px  #000;
+  border: 3px solid #1A1919;
+  padding: 10px;
+  /*
+
+  padding: 10px;
+  margin-bottom: 20px;
+
+
+   */
+}
+
+.input-container {
+  position: relative;
+
+}
+
+
+
+.input-container img {
+  position: absolute;
+  right: 12%; /* Adjust the distance from the right */
+  top: 70%;
+  transform: translateY(-60%);
+  width: 34px; /* Adjust the icon size */
+
+}
+
+

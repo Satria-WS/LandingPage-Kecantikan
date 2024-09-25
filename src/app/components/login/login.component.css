@@ -93,6 +93,7 @@ input[type="password"] {
 
 .animation-button.active:active {
   transform: translateY(10px);
+  /* transform: scale(1.2); */
   box-shadow: none;
 }
 
@@ -101,3 +102,6 @@ input[type="password"] {
   cursor: not-allowed;
   box-shadow: 3px 7px 1px 7px #000;
 }
+
+/* // 'disabled-button' is applied when the form is invalid. */
+/* // 'active' is applied when the form is valid. */

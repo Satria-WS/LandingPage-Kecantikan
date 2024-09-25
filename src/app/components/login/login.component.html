@@ -44,27 +44,117 @@
           <span>OR</span>
         </div>
         <div class="py-3">
-          <form class="pl-20 pr-4">
-            <div class="input-container py-5">
-              <label class="text-xl tracking-[10px]">Email</label>
-              <input type="email" />
-              <img src="/assets/login/email.svg" alt="email"/>
-            </div>
-            <div class="input-container py-3">
-              <label class="text-xl tracking-[10px]">Password</label>
-              <input type="password"/>
-              <img src="/assets/login/password.svg" alt="password"/>
-            </div>
-            <p class="py-3">Don’t have account sign up, <span>here</span></p>
-          </form>
-          <div class="relative bg-black">
-            <button class="absolute right-14">
-              <span class="text-white">Login</span>
-            </button>
-          </div>
-        </div>
+          <form class="pl-20 pr-4" (ngSubmit)="onSubmit()" #loginForm="ngForm">
+            <div class="input-container pt-5">
+              <label class="text-xl tracking-[10px]" for="email">Email</label>
+              <input
+                name="email"
+                id="email"
+                type="email"
+                [maxLength]="25"
+                placeholder="email"
+                [(ngModel)]="email"
+                required
+                #emailInput="ngModel"
+              />
+              <img src="/assets/login/email.svg" alt="email" />
+              <div
+                class="relative pt-3"
+                *ngIf="
+                  emailInput.invalid && (emailInput.dirty || emailInput.touched)
+                "
+              >
+                <small
+                *ngIf="emailInput.errors?.['required']"
+                  class="absolute text-red-500"
+                >
+                  Email required.
+                </small>
+                <small
+                *ngIf="emailInput.errors?.['email']"
+                  class="absolute text-red-500"
+                >
+                  Email not valid.
+                </small>
+              </div>
 
+            </div>
+
+            <div class="input-container pt-5 pb-2">
+              <label class="text-xl tracking-[10px]" for="password">
+                Password
+              </label>
+              <input
+                name="password"
+                id="password"
+                type="password"
+                [maxLength]="10"
+                placeholder="password"
+                [(ngModel)]="password"
+                required
+                #passwordInput="ngModel"
+              />
+              <img src="/assets/login/password.svg" alt="password" />
+              <div
+                class="relative pt-3"
+                *ngIf="
+                  passwordInput.invalid &&
+                  (passwordInput.dirty || passwordInput.touched)
+                "
+              >
+                <small
+                  *ngIf="passwordInput.errors?.['required']"
+                  class="absolute text-red-500"
+                >
+                  Password is required**
+                </small>
+              </div>
+            </div>
+            <p class="py-3">
+              Don’t have account sign up,
+              <span class="text-[#F4509A]">here</span>
+            </p>
+            <div class="relative bg-black">
+              <button
+                [disabled]="loginForm.invalid"
+                type="submit"
+                class="animation-button absolute items-center rounded-md right-[10%] pt-5 pr-20"
+                [ngClass]="{
+                  'disabled-button': loginForm.invalid,
+                  active: !loginForm.invalid,
+                }"
+              >
+                <span class="relative left-[100%] bottom-[10px] text-black">
+                  Login
+                </span>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </section>
 </main>
+<!-- <form [formGroup]="emailForm" (ngSubmit)="onSubmitx()">
+  <input
+    type="email"
+    formControlName="email"
+    placeholder="Enter your email"
+    required
+  />
+  <div
+    *ngIf="
+      emailControl &&
+      emailControl.invalid &&
+      (emailControl.dirty || emailControl.touched)
+    "
+  >
+    <small *ngIf="emailControl.errors?.['required']">Email is required.</small>
+    <small *ngIf="emailControl.errors?.['email']">Invalid email format.</small>
+  </div>
+  <button type="submit" [disabled]="emailForm.invalid">Submit</button>
+</form> -->
+
+<!-- <small *ngIf="email && !validateEmail(email)" class="absolute text-red-500">
+  Invalid email format.
+</small> -->

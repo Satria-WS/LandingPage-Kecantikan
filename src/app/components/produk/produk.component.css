@@ -10,7 +10,7 @@ h2::after {
   width: 150px;
   height: 4px;
   transform: skew(-12deg) translateX(-50%);
-  background: #524A4E;
+  background: #524a4e;
   z-index: -1;
 }
 

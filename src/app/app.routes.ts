@@ -5,6 +5,8 @@ import { ProdukComponent } from './components/produk/produk.component';
 import { PeluangBisnisComponent } from './components/peluang-bisnis/peluang-bisnis.component';
 import { BerandaComponent } from './components/beranda/beranda.component';
 import { LoginComponent } from './components/login/login.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { authGuard } from './guard/auth.guard';
 
 export const routes: Routes = [
   {
@@ -38,4 +40,13 @@ export const routes: Routes = [
     path: 'login',
     component: LoginComponent,
   },
+  {
+    path: 'dashboard',
+    component: DashboardComponent,
+    canActivate: [authGuard],
+  },
+  {
+    path: '**',
+    redirectTo: '/login',
+  }
 ];

@@ -59,10 +59,12 @@
               />
               <img src="/assets/login/email.svg" alt="email" />
               <div
+                *ngIf="
+                  emailInput.invalid && (emailInput.dirty || emailInput.touched)
+                "
                 class="relative pt-3"
-
               >
-                <!-- <small
+                <small
                 *ngIf="emailInput.errors?.['required']"
                   class="absolute text-red-500"
                 >
@@ -73,15 +75,15 @@
                   class="absolute text-red-500"
                 >
                   Email not valid.
-                </small> -->
-                <small
+                </small>
+                <!-- <small
                   *ngIf="
                     emailInput.errors?.['email'] ||
                     emailInput.errors?.['required']
                   "
                 >
                   Provide valid email
-                </small>
+                </small> -->
               </div>
             </div>
 

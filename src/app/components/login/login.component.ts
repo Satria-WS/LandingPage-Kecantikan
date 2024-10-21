@@ -1,5 +1,6 @@
 import { NgClass, NgIf } from '@angular/common';
 import { Component } from '@angular/core';
+import {  Router } from '@angular/router';
 import {
   ReactiveFormsModule,
   FormsModule,
@@ -7,6 +8,7 @@ import {
   FormGroup,
   Validators,
 } from '@angular/forms';
+import { AuthService } from '../../service/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -45,20 +47,28 @@ export class LoginComponent {
   //     console.log('Form is invalid:', this.emailForm.errors);
   //   }
   // }
+  constructor(
+    private router: Router,
+    private authService: AuthService,
+  ) {}
 
   onClick() {
     console.log('Hello world');
 
   }
 
+  // simple submit
   onSubmit() {
-    if (this.email) {
-      console.log('Email is valid:', this.email);
+    console.log(this.email, this.password);
+    if (this.authService.login(this.email, this.password)) {
+      this.router.navigate(['/dashboard']);
+
     } else {
-      console.log('Email is invalid or required');
+      alert('salah govlok');
     }
-    console.log('password?', this.password);
+    console.log('isAuth?', this.authService.isAuth);
   }
+
 
 }
 
